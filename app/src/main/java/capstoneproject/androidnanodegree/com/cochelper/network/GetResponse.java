@@ -18,7 +18,7 @@ public class GetResponse {
 
     public String run(String url) throws IOException {
         Request request = new Request.Builder()
-                .url(url).header("Authorization","Bearer " + Constants.AUTH_TOKEN)
+                .url(url).header("Authorization", "Bearer " + Constants.AUTH_TOKEN)
                 .build();
 
         Response response = client.newCall(request).execute();
